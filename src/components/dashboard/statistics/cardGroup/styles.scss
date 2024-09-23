@@ -1,0 +1,27 @@
+.card-group {
+  background-color: #ffffff;
+  border-radius: 8px;
+  
+	&__cards {
+    display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+  
+  &__card {
+    padding: 40px 56px;
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    
+
+    &-icon {
+      margin-bottom: 24px;
+    }
+
+    &:not(:last-child) {
+      border-right: 1px solid rgb(206, 206, 206);
+    }
+  }
+}

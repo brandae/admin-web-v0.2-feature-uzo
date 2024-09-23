@@ -1,0 +1,83 @@
+.grouped-statistics {
+  width: 482px;
+  padding-right: 32px;
+
+  &__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 24px;
+
+    &_text {
+      font-size: 32px;
+      font-weight: 600;
+    }
+
+    &_control {
+      font-size: 10px;
+      font-weight: 600;
+      color: #3e79f7;
+      cursor: pointer;
+
+      &:hover {
+        // transform: scale(1.1);
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__subtitle {
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 26px;
+    margin-bottom: 24px;
+  }
+
+  &__stats {
+    gap: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    // background-color: yellow;
+  }
+
+  &__chart {
+    // background-color: pink;
+  }
+
+  &__bars {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    // background-color: yellow;
+    gap: 8px;
+  }
+
+  .bar_title {
+    width: 30%;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .bar_stat {
+    flex-grow: 1;
+    // background-color: red;
+    .ant-progress-inner {
+      background-color: #f1f1f1 !important;
+    }
+  }
+  .bar_count {
+    font-size: 12px;
+    font-weight: 700;
+    // background-color: green;
+  }
+}

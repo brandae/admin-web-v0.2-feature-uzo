@@ -1,0 +1,91 @@
+export const ParcelMenu = [
+  {
+    name: 'dashboard',
+    icon: 'dashboard',
+    url: 'dashboard',
+    id: 'dashboard_01',
+  },
+  {
+    name: 'parcel.order',
+    id: 'parcel.order',
+    icon: 'fiShoppingCart',
+    submenu: [
+      {
+        name: 'all.orders',
+        icon: 'fiShoppingCart',
+        url: 'parcel-orders',
+        id: 'parcel-orders',
+        children: [],
+      },
+      {
+        name: 'parcel.types',
+        icon: 'star',
+        url: 'parcel-types',
+        id: 'parcel-types',
+        children: [],
+      },
+      {
+        name: 'options',
+        icon: 'branches',
+        url: 'options',
+        id: 'options',
+        children: [],
+      },
+      {
+        name: 'order.status',
+        icon: 'RiFileSettingsLine',
+        url: 'settings/orderStatus',
+        id: 'order.status',
+        children: [],
+      },
+      {
+        name: 'reviews',
+        icon: 'star',
+        url: 'reviews/parcel',
+        id: 'order-review_01',
+        children: [],
+      },
+    ],
+  },
+  {
+    name: 'deliveryman',
+    id: 'deliveryman.management',
+    icon: 'CarOutlined',
+    submenu: [
+      {
+        name: 'deliveries.list',
+        icon: 'TbTruckDelivery',
+        id: 'deliveries_list',
+        url: 'deliveries/list',
+        children: [],
+      },
+      {
+        name: 'deliveries.map',
+        icon: 'TbSitemap',
+        id: 'deliveries_map',
+        url: 'deliveries/map',
+        children: [],
+      },
+      {
+        name: 'delivery.statistics',
+        icon: 'ImStatsDots',
+        id: 'delivery.statistics',
+        url: 'delivery/statistics',
+        children: [],
+      },
+      {
+        name: 'deliveryboy.reviews',
+        icon: 'TbTruckDelivery',
+        url: 'reviews/deliveryboy',
+        id: 'deliveryboy-reviews_01',
+        children: [],
+      },
+    ],
+  },
+  {
+    name: 'logout',
+    icon: 'logout',
+    url: '',
+    id: 'logout_04',
+  },
+]
